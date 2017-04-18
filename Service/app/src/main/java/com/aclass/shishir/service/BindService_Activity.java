@@ -61,12 +61,6 @@ public class BindService_Activity extends AppCompatActivity implements View.OnCl
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        unbindService(serviceConnection);
-    }
-
-    @Override
     public void onClick(View view) {
 
         firstN = Integer.parseInt(firstNumber.getText().toString());
